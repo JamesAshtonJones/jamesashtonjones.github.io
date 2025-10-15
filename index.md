@@ -1,7 +1,6 @@
 ---
 layout: home
 title: Home
-permalink: /
 ---
 
 <div id="intro-wrapper" class="l-text">
