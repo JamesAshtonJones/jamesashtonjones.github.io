@@ -1,0 +1,38 @@
+- id: email
+  description: "jjones668@gatech.edu"
+  color: "#515151"
+  class: "fas fa-envelope icon"
+  url: "mailto:jjones668@gatech.edu"
+  on-homepage: true
+  cv-group: 1
+
+- id: github
+  description: "@jamesashtonjones"
+  color: "#6e5494"
+  class: "fab fa-github icon"
+  url: "https://github.com/jamesashtonjones"
+  on-homepage: true
+  cv-group: 2
+
+- id: linkedin
+  description: "jamesashtonjones"
+  color: "#0077b5"
+  class: "fab fa-linkedin-in icon"
+  url: "https://www.linkedin.com/in/jamesashtonjones"
+  on-homepage: true
+
+- id: home
+  description: "jamesashtonjones.com"
+  color: "#515151"
+  class: "fas fa-home icon"
+  url: "https://jamesashtonjones.com"
+  on-homepage: false
+  cv-group: 1
+
+- id: resume
+  description: Resume PDF
+  color: "#ba2818"
+  class: "far fa-file-pdf icon"
+  url: "/resume.pdf"
+  on-homepage: false
+  cv-group: 1
