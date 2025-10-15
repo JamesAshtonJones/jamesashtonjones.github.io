@@ -1,0 +1,19 @@
+{
+  "name": "jamesashtonjones.github.io",
+  "version": "1.0.0",
+  "description": "Ashton's website.",
+  "main": "index.js",
+  "scripts": {
+    "start": "bundle exec jekyll serve --livereload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesashtonjones/jamesashtonjones.github.io.git"
+  },
+  "author": "James Ashton Jones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamesashtonjones/jamesashtonjones.github.io/issues"
+  },
+  "homepage": "https://github.com/jamesashtonjones/jamesashtonjones.github.io#readme"
+}
