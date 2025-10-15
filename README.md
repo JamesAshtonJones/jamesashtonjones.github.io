@@ -1,1 +1,1 @@
-# Personal Website for James Ashton 
+# Personal Website for James Ashton Jones
