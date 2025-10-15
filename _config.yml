@@ -1,6 +1,6 @@
 title: James Ashton Jones
 tagline: Student at Georgia Tech
-url: "https://www.jamesashtonjones.com"
+url: https://jamesashtonjones.com
 baseurl: ""
 # gems: [jekyll-paginate]
 # paginate: 5
@@ -15,7 +15,7 @@ sass:
 
 author:
   name: James Ashton Jones
-  url: https://www.jamesashtonjones.com
+  url: https://jamesashtonjones.com
   email: jjones668@gatech.edu
 
 markdown: kramdown
