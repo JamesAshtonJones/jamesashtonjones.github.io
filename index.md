@@ -5,8 +5,6 @@ title: Home
 
 <div id="intro-wrapper" class="l-text">
 	<div id="intro-title-wrapper">
-		<div id="intro-image-wrapper">
-			<img id="intro-image" src="/images/casual.jpg"></div>
 		<div id="intro-title-text-wrapper">
 			<h1 id="intro-title">James Ashton Jones</h1>
 			<div id="intro-subtitle">Student at Georgia Tech</div>
@@ -18,6 +16,9 @@ title: Home
 				{% endfor %}
 			</div>
 		</div>
+		</div>
+			<div id="intro-image-wrapper">
+			<img id="intro-image" src="/images/casual.jpg">
 		</div>
 	</div>
 	<div id="everything-else" class="l-middle">
