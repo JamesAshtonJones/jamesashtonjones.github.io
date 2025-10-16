@@ -24,6 +24,7 @@ title: Home
 	<div id="everything-else" class="l-middle">
 		<a href="/resume.pdf"><div><i class="fa fa-portrait icon icon-right-space"></i>Resume</div></a>
 		<a href="/projects"><div><i class="fas fa-laptop-code icon icon-right-space"></i>Projects</div></a>
+		<a href="{{ site.url }}/everything-else"><div><i class="fa fa-list-ul icon icon-right-space"></i>Everything Else</div></a>
 	</div>
 	<hr class="l-middle home-hr">
 	<div>
