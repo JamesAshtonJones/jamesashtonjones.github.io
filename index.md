@@ -16,8 +16,7 @@ title: Home
 				{% endfor %}
 			</div>
 		</div>
-		</div>
-			<div id="intro-image-wrapper">
+		<div id="intro-image-wrapper">
 			<img id="intro-image" src="/images/casual.jpg">
 		</div>
 	</div>
