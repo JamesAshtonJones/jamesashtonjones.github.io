@@ -28,11 +28,17 @@ title: Home
 	<hr class="l-middle home-hr">
 	<div>
 		Hi! I’m Ashton, an incoming Quantitative and Computational Finance master’s student at Georgia Tech, where I am finishing my B.S. in Industrial Engineering with a concentration in Analytics and Data Science. My work sits at the intersection of machine learning, stochastic modeling, and quantitative risk analysis, with applications in financial systems and large-scale optimization.
-
+	</div>
+	<div style="height: 1rem"></div>
+	<div>
 Previously, I interned at Los Alamos National Laboratory, where I developed probabilistic models for real-time nuclear asset tracking and built quantitative risk metrics to support national security operations. At Georgia Tech, I co-lead a research team developing stochastic supply chain models that integrate economic and operational data to forecast risk propagation across U.S. energy networks.
-
+	</div>
+	<div style="height: 1rem"></div>
+	<div>
 My projects often bridge research and practice, from designing machine learning-driven entropic risk optimization frameworks for portfolio construction to developing predictive models for ETF trade profitability using statistical learning techniques. I’m extremely passionate about building data-driven systems that enhance decision-making under uncertainty.
-
+	</div>
+	<div style="height: 1rem"></div>
+	<div>
 When I’m not modeling data, you’ll probably find me watching college football, exploring the Blue Ridge Mountains, or playing golf. 
 	</div>
 </div>
