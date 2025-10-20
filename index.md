@@ -31,15 +31,15 @@ title: Home
 	</div>
 	<div style="height: 1rem"></div>
 	<div>
-Previously, I interned at Los Alamos National Laboratory, where I developed probabilistic models for real-time nuclear asset tracking and built quantitative risk metrics to support national security operations. At Georgia Tech, I co-lead a research team developing stochastic supply chain models that integrate economic and operational data to forecast risk propagation across U.S. energy networks.
+		Previously, I interned at Los Alamos National Laboratory, where I developed probabilistic models for real-time nuclear asset tracking and built quantitative risk metrics to support national security operations. At Georgia Tech, I co-lead a research team developing stochastic supply chain models that integrate economic and operational data to forecast risk propagation across U.S. energy networks.
 	</div>
 	<div style="height: 1rem"></div>
 	<div>
-My projects often bridge research and practice, from designing machine learning-driven entropic risk optimization frameworks for portfolio construction to developing predictive models for ETF trade profitability using statistical learning techniques. I’m extremely passionate about building data-driven systems that enhance decision-making under uncertainty.
+		My projects often bridge research and practice, from designing machine learning-driven entropic risk optimization frameworks for portfolio construction to developing predictive models for ETF trade profitability using statistical learning techniques. I’m extremely passionate about building data-driven systems that enhance decision-making under uncertainty.
 	</div>
 	<div style="height: 1rem"></div>
 	<div>
-When I’m not modeling data, you’ll probably find me watching college football, exploring the Blue Ridge Mountains, or playing golf. 
+		When I’m not modeling data, you’ll probably find me watching college football, exploring the Blue Ridge Mountains, or playing golf. 
 	</div>
 </div>
 
