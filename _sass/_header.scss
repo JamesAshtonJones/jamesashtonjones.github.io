@@ -1,76 +1,226 @@
+// #masthead {
+//     border-bottom: 1px solid $border-color;
+//     padding-top: 0.5rem;
+//     padding-bottom: 0.5rem;
+// }
+
+
+// #masthead > h1 {
+//     grid-column: text-start / 6;
+//     font-size: 1.25rem;
+//     margin-top: 0rem;
+//     margin-bottom: 0rem;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     width: max-content;
+// }
+
+// .navbar-image {
+//     display: flex;
+//     flex-direction: row !important;
+//     gap: 10px;
+// }
+
+// #masthead > h1 > a {
+//     color: $text-color;
+// }
+
+// #masthead > nav {
+//     grid-column: 6 / text-end;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: flex-end;
+//     font-size: 0.9rem;
+// }
+
+// nav > a {
+// 	background-color: $black-025;
+// 	border-radius: 5rem;
+// 	padding: 0.5rem 0.75rem;
+// 	margin: 0.25rem;
+// 	text-align: center;
+// 	grid-column: 1fr;
+// 	transition: all .2s ease-in-out;
+// 	color: $text-color;
+// 	font-weight: 500;
+// }
+
+// nav > a:hover {
+//     text-decoration: none;
+// 	background: $black-05;
+// 	transform: scale(1.03);
+//     color: $text-color;
+// }
+
+// @media screen and (max-width:$mobile) {
+
+//     #masthead {
+//         padding-top: 0.5rem;
+//         padding-bottom: 0.5rem;
+//     }
+
+//     #masthead > h1 {
+//         grid-column: page;
+//         margin-top: 0.5rem;
+//         margin-bottom: 0.5rem;
+//     }
+
+//     #masthead > nav {
+//         grid-column: page;
+//         justify-content: flex-start;
+//     }
+
+// }
+$qf-surface:      if(global-variable-exists(border-color), transparent, #0b0f17);
+$qf-accent:       if(global-variable-exists(brand-accent), $text-color, #3ddc97); /* muted green */
+$qf-muted:        if(global-variable-exists(black-025), $black-025, rgba(255,255,255,0.06));
+$qf-muted-2:      if(global-variable-exists(black-05),  $black-05,  rgba(255,255,255,0.1));
+$qf-text:         if(global-variable-exists(text-color), $text-color, #e6eef7);
+$qf-border:       if(global-variable-exists(border-color), $border-color, rgba(255,255,255,0.12));
+
+/* Masthead: lean, data-first look */
 #masthead {
-    border-bottom: 1px solid $border-color;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  border-bottom: 1px solid $qf-border;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  background: $qf-surface;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* subtle bottom glow, like a trading terminal separator */
+  box-shadow: 0 1px 0 0 rgba(0,0,0,0.35), 0 8px 24px -24px $qf-accent;
 }
 
-
+/* Title block: compact, numbers align, slight tracking */
 #masthead > h1 {
-    grid-column: text-start / 6;
-    font-size: 1.25rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: max-content;
+  grid-column: text-start / 6;
+  font-size: 1.15rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* keep your layout intent */
+  width: max-content;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: $qf-text;
+  font-variant-numeric: tabular-nums lining-nums;
+  /* fallback for older engines */
+  font-feature-settings: "tnum" 1, "lnum" 1;
 }
 
 .navbar-image {
-    display: flex;
-    flex-direction: row !important;
-    gap: 10px;
+  display: flex;
+  flex-direction: row !important;
+  gap: 10px;
+
+  /* finance-y restraint on logos/icons */
+  img, svg {
+    filter: grayscale(20%);
+    opacity: 0.9;
+    transition: filter .15s ease, opacity .15s ease;
+  }
+  img:hover, svg:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
 }
 
 #masthead > h1 > a {
-    color: $text-color;
+  color: $qf-text;
+  text-decoration: none;
 }
 
+/* Right-side nav: terse, terminal-esque chips */
 #masthead > nav {
-    grid-column: 6 / text-end;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 0.9rem;
+  grid-column: 6 / text-end;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.9rem;
 }
 
+/* Links: pill chips with subtle borders and numeric-friendly typography */
 nav > a {
-	background-color: $black-025;
-	border-radius: 5rem;
-	padding: 0.5rem 0.75rem;
-	margin: 0.25rem;
-	text-align: center;
-	grid-column: 1fr;
-	transition: all .2s ease-in-out;
-	color: $text-color;
-	font-weight: 500;
+  background-color: $qf-muted;
+  border: 1px solid transparent;
+  border-radius: 9999px; /* 5rem but clearer */
+  padding: 0.45rem 0.75rem;
+  margin: 0.25rem;
+  text-align: center;
+  grid-column: 1fr;
+  transition: background-color .15s ease, border-color .15s ease, transform .15s ease, box-shadow .15s ease;
+  color: $qf-text;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums lining-nums;
+
+  /* reduce “bouncy” feel for a more institutional vibe */
+  transform: translateY(0);
+  box-shadow: 0 0 0 0 rgba(0,0,0,0);
 }
 
 nav > a:hover {
-    text-decoration: none;
-	background: $black-05;
-	transform: scale(1.03);
-    color: $text-color;
+  text-decoration: none;
+  background: $qf-muted-2;
+  border-color: rgba($qf-accent, 0.35);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px -10px rgba($qf-accent, 0.35);
+  color: $qf-text;
 }
 
-@media screen and (max-width:$mobile) {
+/* Active state for current page */
+nav > a.is-active,
+nav > a[aria-current="page"] {
+  background: rgba($qf-accent, 0.12);
+  border-color: rgba($qf-accent, 0.6);
+}
 
-    #masthead {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
+/* Keyboard focus—visible but understated */
+nav > a:focus-visible, #masthead > h1 > a:focus-visible {
+  outline: 2px solid rgba($qf-accent, 0.8);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
 
-    #masthead > h1 {
-        grid-column: page;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  nav > a,
+  .navbar-image img,
+  .navbar-image svg {
+    transition: none;
+    transform: none;
+  }
+}
 
-    #masthead > nav {
-        grid-column: page;
-        justify-content: flex-start;
-    }
+/* Mobile tightening */
+@media screen and (max-width: $mobile) {
+  #masthead {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 
+  #masthead > h1 {
+    grid-column: page;
+    margin: 0.5rem 0;
+    font-size: 1.05rem;
+  }
+
+  #masthead > nav {
+    grid-column: page;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 0.125rem;
+  }
+
+  nav > a {
+    padding: 0.45rem 0.65rem;
+    white-space: nowrap; /* ticker-like row on mobile */
+  }
 }
