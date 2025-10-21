@@ -4,7 +4,7 @@ title: Projects
 permalink: projects/
 ---
 
-Things I've worked on, as part of research, courses, or just on the side.
+Research, coursework, and other projects that reflect my interests.
 
 <hr>
 
