@@ -3,32 +3,11 @@ $column-width: 3.5rem;
 // Base grid
 // Sizes: screen > page > middle > text 
 // Asides: kicker (left), and gutter (right)
-// main, header, footer {
-// 	display: grid;
-// 	justify-items: stretch;
-// 	grid-template-columns: [screen-start] 1fr [page-start kicker-start] minmax(min-content, $column-width) [middle-start] minmax(min-content, $column-width) [text-start kicker-end] repeat(8, minmax(min-content, $column-width)) [text-end gutter-start] minmax(min-content, $column-width) [middle-end] minmax(min-content, $column-width) [page-end gutter-end] 1fr [screen-end];
-// 	grid-column-gap: 1.5rem;
-// }
-
-/* default */
-$column-width: 3.5rem;
-
-/* on wide screens, make each column bigger */
-@media (min-width: 1200px) {
-  $column-width-lg: 4.5rem;
-
-  main, header, footer {
-    grid-template-columns:
-      [screen-start] 1fr
-      [page-start kicker-start] minmax(min-content, $column-width-lg)
-      [middle-start]             minmax(min-content, $column-width-lg)
-      [text-start kicker-end]    repeat(8, minmax(min-content, $column-width-lg))
-      [text-end gutter-start]    minmax(min-content, $column-width-lg)
-      [middle-end]               minmax(min-content, $column-width-lg)
-      [page-end gutter-end] 1fr
-      [screen-end];
-    grid-column-gap: 2rem; /* optional: breathe a bit more */
-  }
+main, header, footer {
+	display: grid;
+	justify-items: stretch;
+	grid-template-columns: [screen-start] 1fr [page-start kicker-start] minmax(min-content, $column-width) [middle-start] minmax(min-content, $column-width) [text-start kicker-end] repeat(8, minmax(min-content, $column-width)) [text-end gutter-start] minmax(min-content, $column-width) [middle-end] minmax(min-content, $column-width) [page-end gutter-end] 1fr [screen-end];
+	grid-column-gap: 1.5rem;
 }
 
 // Mobile grid
